@@ -1,7 +1,7 @@
 import { parseString } from "xml2js"
 import { writeFileSync } from 'fs'
 
-interface IJsonFormat {
+export interface IJsonFormat {
     chapters: {
         [chapterId: string]: string[]
     }
@@ -88,7 +88,6 @@ export function convert_to_json(xmlString: string, filePath: string): void {
 
         // process the last line
         const bookJson = writeVerse(bookContext)
-
         writeFileSync(filePath, JSON.stringify(bookJson.data))
     });
 }

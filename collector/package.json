@@ -37,6 +37,7 @@
         "csv-parse": "^5.4.0",
         "html-minifier-terser": "^7.2.0",
         "lodash-es": "^4.17.21",
+        "natural": "^6.5.0",
         "node-stream-zip": "^1.15.0",
         "xml2js": "^0.6.0",
         "xpath": "^0.0.32",

@@ -14,5 +14,5 @@ mkdir collection
 .bin/collector setup
 .bin/collector discover ebible
 .bin/collector download eng_bsb
-.bin/collector download vie_vcb
+# .bin/collector download vie_vcb
 .bin/collector process

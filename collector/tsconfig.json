@@ -2,6 +2,8 @@
     "extends": "../tsconfig_base.jsonc",
     "include": ["src/**/*.ts"],
     "compilerOptions": {
+        "esModuleInterop": true,
         "types": ["node", "yargs", "lodash-es"],
+        "lib": ["DOM"]
     },
 }

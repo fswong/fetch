@@ -12,7 +12,6 @@ import {update_manifest} from './manifest.js'
 import {concurrent, PKG_PATH, read_json, read_dir} from './utils.js'
 import type {TranslationSourceMeta, BookExtracts} from './types'
 import { convert_to_json } from './xml_to_json.js'
-import { generate_search_indexes } from './search_indexes.js'
 
 
 export async function update_source(trans_id?:string){
@@ -141,7 +140,6 @@ export async function update_dist(trans_id?:string){
         }
     }), 4)
 
-    generate_search_indexes();
     // Update manifest whenever dist files change
     await update_manifest()
 }
